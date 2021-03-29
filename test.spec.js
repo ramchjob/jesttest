@@ -1,5 +1,9 @@
-const sum = require('./index');
-
-test('adds 1 + 2 to equal 3', () => {
-  expect(sum(1, 2)).toBe(3);
-});
+const index = require("./index")
+describe('application test ', () => {
+  test('simple test', () => {
+     index.getDay().then(data => {
+       console.log(data)
+       expect(data).toBe(1)   
+     });
+  });  
+})
